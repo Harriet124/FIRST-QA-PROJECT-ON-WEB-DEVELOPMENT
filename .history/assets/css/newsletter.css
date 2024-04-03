@@ -105,3 +105,125 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: none;
+    display: flex;
+    flex-direction: column-reverse;
+
+    position: absolute;
+  }
+  .parent-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100%;
+  }
+  .left-container {
+    height: 60vh;
+    position: relative;
+    width: 100%;
+    top: -60px;
+  }
+  .content {
+    font-size: 18px;
+  }
+  .left-container .updated {
+    font-size: 40px;
+  }
+  .form-container input,
+  .form-container button {
+    border-radius: 10px;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 30px;
+    border: 1px solid #242742;
+  }
+  .form-container input::placeholder {
+    font-size: 14px;
+  }
+  .checkBoxContainer {
+    margin-bottom: 20px;
+    align-items: first baseline;
+  }
+  .checkBoxContainer li {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .checkBoxContainer img {
+    width: 20px;
+    height: 20px;
+  }
+  .email,
+  .error-container {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .right-container {
+    position: relative;
+    top: -90px;
+    max-height: 40vh;
+    left: -18px;
+    width: 110%;
+  }
+  .right-container img {
+    position: relative;
+    max-height: 50vh;
+    visibility: hidden;
+  }
+  .right-container .img {
+    position: relative;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/Mask\ group.png");
+  }
+  .input-header {
+    margin-top: 10px;
+  }
+}
+/*   
+  body {
+    background: none;
+    border: 1px solid red;
+  }
+  .parent-container {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .right-container {
+    padding: 3%;
+    height: 40vh; /* Set fixed height for the right container */
+/* width: 100%; */
+/* order: -1; Move the right container above the left container */
+/* border: 1px solid red; */
+/* } */
+/*
+  .left-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 40px;
+  }
+}
+
+.right-container img {
+  height: 80%;
+  width: 100%;
+  margin: 0;
+}
+
+.updated {
+  font-size: 36px;
+}
+
+.content,
+.checkBoxContainer li {
+  font-size: 12px;
+} */

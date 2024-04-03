@@ -68,3 +68,47 @@ body {
 #userEmail {
   font-weight: bold;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: none;
+    width: 70%;
+    display: block;
+    height: 100vh;
+    position: absolute;
+  }
+  .main-container {
+    position: relative;
+    width: 90%;
+    top: -40px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  .sub-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 70vh;
+  }
+  .subscribing {
+    width: 70%;
+    margin-top: 20px;
+    color: #242742;
+    font-size: 30px;
+  }
+  .button {
+    color: #ffffff;
+    background-color: #242742;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .confirmation {
+    position: relative;
+    width: 90%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+}
