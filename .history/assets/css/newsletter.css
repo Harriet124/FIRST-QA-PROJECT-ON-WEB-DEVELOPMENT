@@ -111,13 +111,14 @@ body {
     background: none;
     display: flex;
     flex-direction: column-reverse;
-
+    height: 100vh;
     position: absolute;
   }
   .parent-container {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    border: 1px solid red;
   }
   .left-container {
     height: 60vh;
@@ -162,7 +163,7 @@ body {
   .right-container {
     position: relative;
     top: -90px;
-    max-height: 40vh;
+    height: 40vh;
     left: -18px;
     width: 110%;
   }

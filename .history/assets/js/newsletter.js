@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!emailPattern.test(emailValue)) {
       displayErrorMessage("Valid email is required");
-      console.log(displayErrorMessage("invalid email"));
     } else {
       form.submit();
     }
@@ -46,4 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const emailValue = localStorage.getItem("email");
 userEmail.innerHTML = emailValue;
-console.log(emailValue);
+
