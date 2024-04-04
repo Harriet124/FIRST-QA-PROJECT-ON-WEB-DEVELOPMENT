@@ -111,20 +111,22 @@ body {
     background: none;
     display: flex;
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 100%;
     position: absolute;
   }
   .parent-container {
     flex-direction: column-reverse;
-    height: 80vh;
+    height: 100%;
     width: 100%;
     border: 1px solid red;
+
   }
   .left-container {
     height: 60vh;
     position: relative;
     width: 100%;
-    top: -60px;
+    top: -10px;
+    border: 1px solid blue;
   }
   .content {
     font-size: 18px;
@@ -139,6 +141,7 @@ body {
     padding: 18px;
     margin-bottom: 30px;
     border: 1px solid #242742;
+    
   }
   .form-container input::placeholder {
     font-size: 14px;
@@ -162,10 +165,10 @@ body {
   }
   .right-container {
     position: relative;
-    top: -90px;
+    top: -40px;
     height: 40vh;
     left: -18px;
-    width: 110%;
+    width: 115%;
   }
   .right-container img {
     position: relative;
