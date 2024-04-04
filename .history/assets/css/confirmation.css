@@ -13,8 +13,8 @@ body {
 }
 .main-container {
   height: 80vh;
-  border-radius: 36px;
   width: 30%;
+  border-radius: 36px;
   margin: 0 auto;
   background-color: #ffff;
   display: flex;
@@ -69,21 +69,30 @@ body {
   font-weight: bold;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   body {
     background: none;
-    width: 70%;
     display: block;
     height: 100vh;
     position: absolute;
   }
-  .main-container {
+  /* .main-container {
     position: relative;
     width: 90%;
     top: -40px;
     margin: 0 auto;
     height: 100vh;
+  } */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-top: 20%;
+    width: 100%;
+    height: 100vh;
   }
+
   .sub-container {
     width: 100%;
     margin: 0 auto;
@@ -98,8 +107,8 @@ body {
   .button {
     color: #ffffff;
     background-color: #242742;
-    margin: 0 auto;
-    margin-top: 200px;
+    position: relative;
+    top: 20%;
     width: 90%;
     padding: 10px;
     border-radius: 10px;
